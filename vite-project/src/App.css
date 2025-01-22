@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #002540, #004D60, #001524, #003E50, #002030);
+    background-size: 400% 400%;
+    animation: gradientAnimation 60s linear infinite; 
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
