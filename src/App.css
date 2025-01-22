@@ -4,6 +4,8 @@ body {
   background: linear-gradient(45deg, #002540, #004D60, #001524, #003E50, #002030);
     background-size: 400% 400%;
     animation: gradientAnimation 60s linear infinite; 
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
 }
 
 @keyframes gradientAnimation {

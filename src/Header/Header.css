@@ -4,7 +4,16 @@
     align-items: center;
     padding: 10px 20px;
     background-color: transparent;
+    background: linear-gradient(45deg, #002540, #004D60, #001524, #003E50, #002030);
+    background-size: 400% 400%;
+    animation: gradientAnimation 60s linear infinite; 
 }
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  } 
 
 .header button {
     font-family: 'Kanit', sans-serif;
