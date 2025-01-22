@@ -1,0 +1,11 @@
+.footerOne{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 143px;
+}
+
+.footerOne img {
+    width: 5%;
+}

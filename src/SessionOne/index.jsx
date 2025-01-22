@@ -9,7 +9,7 @@ const SessionOne = () => {
         Com habilidades em inglês e um forte foco em aprendizado contínuo, estou sempre buscando evoluir e contribuir para a criação de soluções eficientes e inovadoras!</h3>
     </div>
     <div className="Avatar">
-        <img src="https://github.com/gabrielms040.png" alt="Icon Avatar" />
+    <img src="/img/rat-spin.gif" alt="Rat Spin" />
         <h3>Seu desafio, nossa solução em código.</h3>
     </div>
   </div>
@@ -17,3 +17,5 @@ const SessionOne = () => {
 }
 
 export default SessionOne
+
+//<img src="https://github.com/gabrielms040.png" alt="Icon Avatar" /> 
