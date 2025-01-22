@@ -37,11 +37,15 @@
     align-items: center;
     text-align: center; 
     color: white;
+    font-size: 30px;
+  }
 
+  .Avatar h3{
+    
   }
   
   .Avatar img { 
-    border-radius: 50%; 
+    border-radius: 15%; 
     margin-bottom: 10px;
   }
   
