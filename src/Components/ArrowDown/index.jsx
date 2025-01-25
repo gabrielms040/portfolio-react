@@ -13,7 +13,7 @@ const ArrowDown = () => {
 
   return (
     <footer className={`FooterOne ${visible ? "visible" : "hidden"}`}>
-      <img src="./public/img/arrow-down.png" alt="seta para baixo" className="arrow-icon" />
+      <img src="/img/arrow-down.png" alt="seta para baixo" className="arrow-icon" />
     </footer>
   );
 };
