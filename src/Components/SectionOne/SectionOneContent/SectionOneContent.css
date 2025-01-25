@@ -78,7 +78,6 @@
   @media (max-width: 768px) {
     .content {
       margin-top: 30vh;
-      margin-bottom: 45%;
       text-align: center;
     }
   
@@ -102,7 +101,6 @@
   @media (max-width: 480px) {
     .content {
       margin-top: 30vh;
-      margin-bottom: 30vh;
       text-align: center;
     }
   
