@@ -1,0 +1,36 @@
+.FooterOne {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: end;
+  width: 100%; /* Garante que o footer ocupe toda a largura da seção */
+  height: 20px;
+  bottom: 16px; /* Mantém a seta próxima ao limite inferior */
+  opacity: 0; /* Começa invisível */
+  transition: opacity 0.5s ease-in; /* Suave transição de visibilidade */
+}
+
+.FooterOne.visible {
+  opacity: 1; /* Torna visível quando a classe "visible" é adicionada */
+}
+
+.arrow-icon {
+  width: 40px; /* Define o tamanho inicial da seta */
+  height: auto; /* Mantém a proporção da imagem */
+  cursor: pointer; /* Adiciona um indicador de clique */
+  animation: bounce 2s infinite; /* Animação de "pular" */
+  margin-top: 2vh; /* Ajusta o espaçamento superior */
+}
+
+/* Animação para a seta */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+

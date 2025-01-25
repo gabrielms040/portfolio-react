@@ -1,8 +1,13 @@
 .SectionOne {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ocupa a altura total da viewport */
     font-size: 1rem;
-    margin: 0;
-    padding: 0;
     color: white;
-    scroll-snap-align: center; /* Alinhamento ao rolar */    
-}
+    scroll-snap-align: center; /* Para scroll suave */
+    display: flex;
+    overflow: hidden; /* Esconde elementos fora da tela */
+  }
+  
+  
+  

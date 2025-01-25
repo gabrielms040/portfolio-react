@@ -1,13 +1,13 @@
 import Header from '../Header'
-import FooterOne from '../FooterOne'
+import FooterOne from '../ArrowDown'
 import "./SectionOne.css"
-import SectionOneContent from '../../SectionOneContent'
+import SectionOneContent from './SectionOneContent'
 
 const SectionOne = () => {
   return (
     <div className="Section SectionOne"> 
-        <Header/>
-        <SectionOneContent/>
+    <SectionOneContent/>
+    <FooterOne/>
     </div>
 
   
