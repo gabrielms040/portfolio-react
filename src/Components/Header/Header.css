@@ -1,0 +1,80 @@
+/* Navbar no topo, mas não fixa */
+.header {
+    display:flex;
+    position: relative; /* Não fixa o header, rola com a página */
+    width: 100%;
+    padding: 10px 10px;
+    justify-content: space-evenly; 
+    align-items: flex-start;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra leve para destacar */
+    transition: opacity 0.3s ease; /* Transição suave para desaparecer */
+ 
+  }
+  
+  /* Quando a classe hidden for aplicada, o header desaparecerá */
+  .header.hidden {
+    opacity: 0;
+
+  }
+  
+  /* Botões */
+  .header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Imagens dos ícones */
+  .social-icon {
+    width: 25x; /* Tamanho inicial */
+    height: 25px;
+    margin-right: 15px; /* Aumenta o espaço entre o ícone e o texto */
+  }
+  
+  /* Texto ao lado dos ícones */
+  .social-text {
+    color: white; /* Cor do texto */
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    padding: 8px;
+    letter-spacing: 1px;
+  }
+  
+  /* Efeito hover para aumento */
+  .header button:hover {
+    transform: scale(1.3); /* Aumenta os ícones ao passar o mouse */
+    transition: transform 0.5s ease; /* Transição suave */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .header {
+      justify-content: space-evenly; /* Garante que os botões fiquem igualmente distribuídos */
+    }
+  
+    .header button {
+      padding: 5px;
+    }
+  
+    .social-icon {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px; /* Menos espaço entre ícones e texto em telas menores */
+    }
+  
+    .social-text {
+      display: none; /* Esconde o texto em telas menores */
+    }
+  }
+  
+  /* Em telas muito pequenas, esconder texto */
+  @media (max-width: 500px) {
+    .header button span {
+      display: none; /* Oculta texto nos botões */
+    }
+  }
+  

@@ -1,17 +1,51 @@
-body {
-  height: 100vh; 
-  width: 100%; 
+/* Garantir que o body ocupe 100% da altura */
+body, html {
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, #002540, #004D60, #001524, #002f3d, #002030);
-    background-size: 400% 400%;
-    animation: gradientAnimation 60s linear infinite; 
+  height: 100%;
   font-family: 'Kanit', sans-serif;
   font-weight: 400;
 }
 
+.animated-gradient {
+
+  background-size: 400% 400%; 
+  background: linear-gradient(45deg, #002540, #004D60, #001524, #002f3d, #002030);
+  animation: gradientAnimation 60s linear infinite; 
+}
+
 @keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Configurar altura das seções */
+.Section {
+  height: 100vh; /* Cada seção ocupa 100% da altura da viewport */
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  color: white;
+  scroll-snap-align: center; /* Alinhamento ao rolar */
+}
+
+
+/* Animação do gradiente para movimento suave */
+
+
+#main-container {
+  overflow-x: hidden; /* Permitir rolagem vertical */
+  height: 100vh; /* Garantir que ocupa toda a tela */
+  scroll-snap-type: y mandatory; /* Ativar o scroll por seção */
+  -webkit-overflow-scrolling: touch; /* Suporte a rolagem suave em dispositivos móveis */
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }

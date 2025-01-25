@@ -1,0 +1,8 @@
+.SectionOne {
+    height: 100vh;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+    scroll-snap-align: center; /* Alinhamento ao rolar */    
+}

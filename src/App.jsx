@@ -1,18 +1,18 @@
-import './App.css'
-import FooterOne from './FooterOne'
-import Header from './Header'
-import SessionOne from './SessionOne'
+import React from 'react';
+import './App.css';
+import SectionOne from "./Components/SectionOne";
+import SectionTwo from './Components/SectionTwo';
+import SectionThree from './Components/SectionThree';
+import Header from './Components/Header';
 
 function App() {
   return (
-    
-    <div className="App">
-    <Header />
-    <SessionOne />
-    <FooterOne/>
-
+    <div id='main-container' className='animated-gradient'>
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,15 @@
+.SectionTwo {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Cada seção ocupa 100% da altura da viewport */
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+    scroll-snap-align: center; /* Alinhamento ao rolar */
+    text-align: center;
+
+}
+  
+  
