@@ -1,24 +1,24 @@
 .FooterOne {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
+  justify-content: center;
   align-items: end;
-  width: 100%; /* Garante que o footer ocupe toda a largura da seção */
+  width: 100%;
   height: 20px;
-  bottom: 16px; /* Mantém a seta próxima ao limite inferior */
-  opacity: 0; /* Começa invisível */
-  transition: opacity 0.5s ease-in; /* Suave transição de visibilidade */
+  bottom: 16px; 
+  opacity: 0; 
+  transition: opacity 0.5s ease-in;
 }
 
 .FooterOne.visible {
-  opacity: 1; /* Torna visível quando a classe "visible" é adicionada */
+  opacity: 1;
 }
 
 .arrow-icon {
-  width: 40px; /* Define o tamanho inicial da seta */
-  height: auto; /* Mantém a proporção da imagem */
-  cursor: pointer; /* Adiciona um indicador de clique */
-  animation: bounce 2s infinite; /* Animação de "pular" */
-  margin-top: 2vh; /* Ajusta o espaçamento superior */
+  width: 40px; 
+  height: auto; 
+  cursor: pointer; 
+  animation: bounce 2s infinite; 
+  margin-top: 2vh; 
 }
 
 /* Animação para a seta */

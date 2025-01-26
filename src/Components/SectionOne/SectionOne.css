@@ -1,13 +1,129 @@
 .SectionOne {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Ocupa a altura total da viewport */
+    height: 100vh;
     font-size: 1rem;
     color: white;
-    scroll-snap-align: center; /* Para scroll suave */
-    display: flex;
-    overflow: hidden; /* Esconde elementos fora da tela */
+    scroll-snap-align: center; 
+    overflow: hidden;
   }
+
   
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    letter-spacing: 1px;
+    height: 96vh;
+      font-family: "Dela Gothic One", serif;
+      width: 100%;
+    }
+    
+
+    .content h2,
+    .content h1,
+    .content h3 {
+      opacity: 0; 
+      transform: translateX(-50px); 
+      animation: fadeInLeft 1s ease forwards; 
+    }
+    
+    #bemVindo {
+      font-size: 3rem;
+      animation-delay: 0.5s; 
+      margin-bottom: 3%;
+    }
+    
+    .content h1 {
+      font-size: 5rem; 
+      margin: -4rem 0; 
+      animation-delay: 1s; 
+    }
+    
+    .content h3 {
+      font-size: 3rem; 
+      animation-delay: 1.5s;
+      width: 70%;
+      margin-bottom: 8%;
+    }
+    
+    
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(10px);
+      }
+    }
   
+    @media (max-width: 1024px) {
+        .content {
+          text-align: center;
+        }
+      
+        .content h1 {
+          font-size: 4rem; 
+          margin: 0 0 -2vh 0;
+          width: 100%;
+        }
+      
+        #bemVindo {
+          font-size: 2.5rem; 
+          margin-bottom: 0;
+        }
+      
+        .content h3 {
+          font-size: 2.5rem; 
+          width: 100%; 
+ 
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .content {
+          text-align: center;
+        }
+      
+        .content h1 {
+          font-size: 3rem; 
+          margin: 0 0 -2rem 0;
+          width: 100%;
+        }
+      
+        #bemVindo {
+          font-size: 2rem; 
+        }
+      
+        .content h3 {
+          font-size: 2rem; 
+          width:100%; 
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .content {
+          text-align: center;
+          width: 95%;
+        }
+      
+        .content h1 {
+          font-size: 3rem; 
+          margin: 0 0 -2vh 0;
+    
+        }
+      
+        #bemVindo {
+          font-size: 1.8rem; 
+          margin-bottom: 0; }
+      
+        .content h3 {
+          font-size: 1.8rem;
   
+    
+        }
+      }

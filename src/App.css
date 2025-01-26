@@ -1,4 +1,3 @@
-/* Garantir que o body ocupe 100% da altura */
 body, html {
   margin: 0;
   padding: 0;
@@ -9,10 +8,10 @@ body, html {
 }
 
 #main-container {
-  overflow-x: hidden; /* Permitir rolagem vertical */
-  height: 100vh; /* Garantir que ocupa toda a tela */
-  scroll-snap-type: y mandatory; /* Ativar o scroll por seção */
-  -webkit-overflow-scrolling: touch; /* Suporte a rolagem suave em dispositivos móveis */
+  overflow-x: hidden; 
+  height: 100vh; 
+  scroll-snap-type: y mandatory; 
+  -webkit-overflow-scrolling: touch; 
 }
 
 ::-webkit-scrollbar {

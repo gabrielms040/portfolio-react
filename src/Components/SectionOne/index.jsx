@@ -1,16 +1,18 @@
-import Header from '../Header'
-import FooterOne from '../ArrowDown'
+import ArrowDown from "../ArrowDown"
 import "./SectionOne.css"
-import SectionOneContent from './SectionOneContent'
+
 
 const SectionOne = () => {
   return (
-    <div className="Section SectionOne"> 
-    <SectionOneContent/>
-    <FooterOne/>
+    <div className="SectionOne">
+      <div className="content">
+       <h3 id='bemVindo'>BEM VINDO,</h3>
+        <h1>ME CHAMO GABRIEL</h1>
+        <h3>E SEU DESAFIO É NOSSA SOLUÇÃO EM CODIGO</h3>
+        </div>
+         <ArrowDown/>
     </div>
 
-  
   )
 }
 
