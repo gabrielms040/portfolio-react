@@ -9,7 +9,7 @@
     scroll-snap-align: center; 
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0%;
+    animation-range: entry 0% cover 35% ;
 }
 
 @keyframes appear {
@@ -23,9 +23,6 @@
     }
 }
 
-.contentTwo {
-    height: 96vh;
-}
 
 .experiences {
     text-align: center;

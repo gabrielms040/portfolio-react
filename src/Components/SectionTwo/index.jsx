@@ -5,7 +5,6 @@ import ArrowDown from '../ArrowDown';
 const SectionTwo = () => {
   return (
     <div className='SectionTwo'> 
-      <div className='contentTwo'> 
         <h2 className='experiences'>EXPERIÊNCIAS</h2>
         <div className='middle'>
           <div className='card frontEnd'>
@@ -26,8 +25,6 @@ const SectionTwo = () => {
             </div>
           </div>
         </div>
-      </div>
-      <ArrowDown />
     </div>
   );
 };

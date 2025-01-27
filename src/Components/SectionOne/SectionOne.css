@@ -6,6 +6,7 @@
     color: white;
     scroll-snap-align: center; 
     overflow: hidden;
+    
 }
   
 
@@ -17,7 +18,7 @@
     justify-content: center;
     align-items: flex-start; 
     letter-spacing: 1px;
-    height: 96vh;
+    height: 90vh;
       font-family: "Dela Gothic One", serif;
       width: 100%;
     }

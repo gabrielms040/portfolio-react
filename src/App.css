@@ -10,18 +10,16 @@ body, html {
 #main-container {
   overflow-x: hidden; 
   height: 100vh; 
-  scroll-snap-type: y mandatory; 
-  -webkit-overflow-scrolling: touch; 
 }
 
 ::-webkit-scrollbar {
-  background: #ffffff2f; /* Cor do fundo da barra */
-  border-radius: 4px; /* Cantos arredondados */
-  width: 6px;
+  background: #ffffff4f; 
+  border-radius: 4px; 
+  width: 10px;
 }
 
 
 ::-webkit-scrollbar-thumb{
-  background: #313131; /* Cor do fundo da barra */
-  border-radius: 10px; /* Cantos arredondados */
+  background: #ffffff;
+  border-radius: 10px; /
 }

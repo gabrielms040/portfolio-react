@@ -8,6 +8,20 @@
     color: white;
     scroll-snap-align: center; 
     text-align: center;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 .projects {
@@ -43,13 +57,13 @@
 }
 
 .buttons button:hover {
-    background-color: #e0e0e0;
+    background-color: #8f8f8f;
 }
 
 .slider-container {
     display: block;
     width: 70vw;
-    padding-left: 12.5vw;
+    padding-left: 15vw;
     padding-top: 20vh;
 }
 

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "./SectionThree.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ArrowDown from "../ArrowDown";
 
 const handleRedirect = (url) => {
   window.open(url, "_blank");
@@ -75,7 +76,7 @@ const data = [
   },  
   {
     title:"CoinTax",
-    contentCard:"É uma ferramenta prática feita em Python com PySimpleGUI, permitindo a conversão entre moedas em tempo real.Ideal para conversões rápidas, utiliza uma API atualizada e é simples de usar.",
+    contentCard:"É uma ferramenta prática feita com Python e PySimpleGUI.Permite a conversão entre moedas em tempo real.Ideal para conversões rápidas, utiliza uma API atualizada e é simples de usar.",
     linkDeploy:"https://github.com/gabrielms040/ConversorDeMoeda.py",
     LinkCode:"https://github.com/gabrielms040/ConversorDeMoeda.py"
   },
