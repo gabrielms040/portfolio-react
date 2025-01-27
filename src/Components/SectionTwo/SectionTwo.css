@@ -1,15 +1,139 @@
 .SectionTwo {
     display: flex;
-    justify-content: center;
-    align-items: center; 
+    flex-direction: column;
     height: 100vh;
     font-size: 2rem;
     margin: 0;
     padding: 0;
     color: white;
     scroll-snap-align: center; 
-    text-align: center;
-
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0%;
 }
-  
-  
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.contentTwo {
+    height: 96vh;
+}
+
+.experiences {
+    text-align: center;
+    font-size: 1.5rem;
+    height: 17vh;
+}
+
+.middle {
+    height: 70vh;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.middle h2 {
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    text-align: center;
+    transform: translate(0%, 140%);
+    transition: transform 1.5s ease, 1.5s ease;
+    opacity: 1;
+}
+
+.card:hover h2 {
+    transform: translateY(10%);
+}
+
+.card h2::after {
+    content: "↓";
+    display: block;
+    font-size: 1.2rem;
+    animation: bounce 2s infinite;
+    margin-top: 10px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(5px);
+    }
+    60% {
+        transform: translateY(3px);
+    }
+}
+
+.card {
+    width: 30vw;
+    text-align: center;
+}
+
+.backEnd p, .frontEnd p {
+    margin: 0;
+    opacity: 0; 
+    transform: translateY(10px);
+    transition: transform 1s ease, opacity 1s cubic-bezier(1, 0, 0.1, 1);
+}
+
+.card:hover p {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+@media (max-width: 1024px) {
+    .middle {
+        height: auto;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45vw; 
+    }
+}
+
+@media (max-width: 768px) {
+    .middle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80vw; 
+    }
+
+    .experiences {
+        height: 3vh;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .middle {
+        gap: 15px; 
+    }
+
+    .experiences {
+        height: 3vh;
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 90vw;
+    }
+
+    .card h2::after {
+        font-size: 1rem; 
+    }
+}
