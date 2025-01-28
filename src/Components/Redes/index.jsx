@@ -1,13 +1,13 @@
 import React from "react";
-import "./Header.css";
+import "./Redes.css";
 
 const handleRedirect = (url) => {
   window.open(url, "_blank");
 }
 
-const Header = () => {
+const Footer = () => {
   return (
-    <header className='header'>
+    <footer className='Footer'>
       <button onClick={() => handleRedirect("https://github.com/gabrielms040")}>
         <span className="social-text">GitHub</span>
         <img src="/img/github.png" alt="GitHub" className="social-icon" />
@@ -24,8 +24,8 @@ const Header = () => {
         <span className="social-text">WhatsApp</span>
         <img src="/img/whatsapp.png" alt="WhatsApp" className="social-icon" />
       </button>
-    </header>
+    </footer>
   );
 }
 
-export default Header;
+export default Footer;
