@@ -1,8 +1,21 @@
-# React + Vite
+## Portfólio Responsivo e Minimalista 🌟
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao meu portfólio!
+Este projeto foi desenvolvido com o objetivo de apresentar meus trabalhos e habilidades de forma clara, moderna e acessível em qualquer dispositivo.
 
-Currently, two official plugins are available:
+## 🛠 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React: Biblioteca JavaScript para a criação de interfaces de usuário.
+HTML5 e CSS3: Estrutura semântica e estilização responsiva.
+Tailwind CSS: Framework CSS para estilização rápida e consistente.
+
+## 🎨 Design
+
+Responsivo: Adaptado para diferentes tamanhos de tela (desktop, tablet e mobile).
+Minimalista: Layout limpo, com foco em usabilidade e navegação intuitiva.
+
+## 📂 Funcionalidades
+
+Exibição de projetos com detalhes relevantes.
+Links para redes sociais e formas de contato.
+Seção sobre mim com uma descrição objetiva das minhas habilidades e experiência.
